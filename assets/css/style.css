@@ -1,0 +1,157 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+
+  /*========== colors ==========*/
+  --first-color: ;
+  --first-color-alt: ; 
+  --title-color:;
+  --text-color: :;
+  --text-color-light: ;
+  --body-color: ;
+  --container-color: ;
+  
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: ;
+  --biggest-font-size:;
+  --h1-font-size: ;
+  --h2-font-size: ;
+  --h3-font-size: ;
+  --normal-font-size:;
+  --small-font-size: ;
+  --smaller-font-size:;
+  --tiny-font-size:;
+
+  /*========== Font weight ==========*/
+  
+
+  /*========== z index ==========*/
+  
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+  
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+.section__title, 
+.section__subtitle {
+  text-align: center;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: 2rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+/*=============== HEADER & NAV===============*/
+
+
+
+/*=============== HOME ===============*/
+
+/*=============== BUTTONS ===============*/
+
+
+/*=============== ABOUT ===============*/
+
+
+
+/*=============== SKILLS ===============*/
+
+
+
+
+/*=============== WORK ===============*/
+
+
+/*=============== TESTIMONIAL ===============*/
+
+
+
+
+
+
+/*=============== FOOTER ===============*/
