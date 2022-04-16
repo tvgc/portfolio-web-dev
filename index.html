@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+     <!--=============== REMIXICONS ===============-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
     <!-- ============================ header================================= -->
+
     <header class="header " id="Header">
         <nav class="nav">
             <a href="" class="nav__logo">
@@ -44,16 +48,82 @@
                     </li>
                 </ul>
             </div>
-        </nav>   
-        <div class="header__content">
+        </nav>  
+         <!--=============== NAVBAR ===============-->
+         <nav class="sidi">
+            <ul class="sidi__list">
+                <a href="#home" class="sidi__link active-link">
+                    <i class="ri-home-5-line"></i>
+                    <span class="sidi__name">
+                        Home
+                    </span>
+                </a>
+
+                <a href="#profile" class="sidi__link">
+                    <i class="ri-user-line"></i>
+                    <span class="sidi__name">
+                        Profile
+                    </span>
+                </a>
+
+                <a href="#message" class="sidi__link">
+                    <i class="ri-chat-3-line"></i>
+                    <span class="sidi__name">
+                        Message
+                    </span>
+                </a>
+
+                <a href="#mail" class="sidi__link">
+                    <i class="ri-mail-open-line"></i>
+                    <span class="sidi__name">
+                        Mail
+                    </span>
+                </a>
+
+                <a href="#settings" class="sidi__link">
+                    <i class="ri-settings-line"></i>
+                    <span class="sidi__name">
+                        Settings
+                    </span>
+                </a>
+
+                <svg class="indicator" width="94" height="56" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="47" cy="28" rx="24" ry="28"/>
+                    <path d="M24 20C24 20 28 55.9999 48 56L0 55.9997C18 55.9998 24 20 24 20Z"/>
+                    <path d="M70 20C70 20 66 55.9999 46 56L94 55.9997C76 55.9998 70 20 70 20Z"/>
+                </svg>
+            </ul>
+        </nav>
+    </header>    
+
+    <!-- ============================ main ================================= -->
+    <main class="main">
+        <!-- =========================== home =========================== -->
+        <section class="home" id="home">
             <h1 class="content__title">Creative UI Designer
                 Sourasith Phomhome
                 Based in Montreal
             </h1>
             <img src="./assets/images/Ilustration bottom.png" alt="" class="content_img">
-        </div> 
-    </header>    
-    <!-- ============================ main ================================= -->
-    <!-- ============================ footer================================= -->
-</body>
-</html>
+        </section> 
+        <!-- =========================== about =========================== -->
+        <section class="about section" >
+            <div class="about__content">
+                <div class="about__circle">
+                    <div class="about__area-text">
+                        <h2>About</h2>
+                        <p class="section__text">
+                            My name is Sourasith Phomhome. I’m a UI Designer and a instrutor based in Montreal. I’m curently working with Design+Code. I’m passionate about creating digital experiences and teaching design. My goal is to help beginners to grow their skills...<span>read more</span>
+                        </p>
+                    </div>
+                </div>
+                <img class="about__img-woman" src="./assets/images/menina.png" alt="mulher com inspriradora">
+                <img class="about__cristal" src="./assets/images/Illustration.png" alt="cristal brilhante">
+                <img class="about__reflex" src="./assets/images/Background.png" alt="">
+            </div>
+        </section>
+    </main>
+        <!-- ============================ footer================================= -->
+        <script src="/portifolio/assets/js/main.js"></script>
+    </body>
+    </html>

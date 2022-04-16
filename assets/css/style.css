@@ -5,7 +5,6 @@
 :root {
   --header-height: 3.5rem;
 
-
   /*========== colors ==========*/
   --first-color: #C961DE; /*utilizado no gradiante*/
   --first-color-alt: #2954A3; /*utilizado no gradiante*/
@@ -22,6 +21,8 @@
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.8rem;
   --smaller-font-size: 0.95rem;
+
+  --font-family: 'Poppins', sans-serif;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -98,6 +99,8 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
+  display:flex;
+  margin:auto;
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -110,6 +113,7 @@ img {
 
 .main {
   overflow: hidden;
+  margin-top: 30rem;
 }
 
 .section {
@@ -127,16 +131,12 @@ img {
   margin-bottom: 2rem;
 }
 
-.section__subtitle {
-  display: block;
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-}
-
 /*=============== HEADER & NAV===============*/
+
 
 .header{
   position: relative;
+
 }
 
 .nav{
@@ -148,7 +148,7 @@ img {
 }
 
 .nav__menu{
-  
+  display: flex;
   background-color: hsla(var(--second-hue),32%,16%,.8);
   width: 100%;
   border-radius: 4rem;
@@ -160,8 +160,118 @@ img {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+/*=============== sidbar ===============*/
+.sidi {
+  position: fixed;
+  top: 10rem;
+  left: 0;
+  width: 72px;
+  height: 328px;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 32px hsla(231, 44%, 45%, .2);
+  margin: 0 auto;
+  padding: 1.5rem .5rem;
+  border-radius: .65rem;
+  overflow: hidden;
+}
+
+.sidi__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sidi__link {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
+
+.sidi__link i {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  z-index: 20;
+  transition: .3s;
+}
+
+.sidi__name {
+  font-size: var(--tiny-font-size);
+  position: absolute;
+  font-weight: 500;
+  transition: .4s;
+  transform: translateY(50px);
+  z-index: 20;
+  color: var(--body-color);
+  opacity: 0;
+}
+
+/* Indicator link */
+.indicator {
+  position: absolute;
+  right: -20px;
+  bottom: 40px;
+  fill: var(--first-color);
+  transition: .3s;
+  transform: rotate(-90deg);
+}
+
+/* Active link */
+.active-sidi i {
+  color: var(--body-color);
+}
+
+.active-sidi .nav__name {
+  opacity: 1;
+  transform: translateY(28px);
+}
+
+/* Move indicator */
+.nav__link:nth-child(1).active-link ~ .indicator {
+  transform: translateX(calc(56px * 0));
+}
+
+.nav__link:nth-child(2).active-link ~ .indicator {
+  transform: translateX(calc(56px * 1));
+}
+
+.nav__link:nth-child(3).active-link ~ .indicator {
+  transform: translateX(calc(56px * 2));
+}
+
+.nav__link:nth-child(4).active-link ~ .indicator {
+  transform: translateX(calc(56px * 3));
+}
+
+.nav__link:nth-child(5).active-link ~ .indicator {
+  transform: translateX(calc(56px * 4));
+}
+
+/*=============== HOME ===============*/
+
+/*=============== BUTTONS ===============*/
+
+/*=============== ABOUT ===============*/
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 .nav__link{
   color: var(--text-color);
@@ -169,7 +279,7 @@ img {
   padding: .4rem;
 }
 
-.header__content{
+.home{
   position: absolute;
   top: 250px;
   right: 400px;
@@ -189,15 +299,68 @@ img {
 }
 
 
-/*=============== HOME ===============*/
+.about__img-woman {
+  display: block;
+  position: absolute;
+  bottom:204px;
+  left:292px;
+  z-index: 100;
+}
 
-/*=============== BUTTONS ===============*/
 
+.about__circle {
+  position: absolute;
+  width:630px;
+  height:630px;
+  border-radius:50%;
+  background:linear-gradient(144.11deg, #C961DE 13.74%, #2954A3 90.91%);
+  z-index: 100;
+}
 
-/*=============== ABOUT ===============*/
+.about__area-text {
+  display:block;
+  top:210px;
+  right:50px;
+  width:280px;
+  position: absolute;
+  z-index: 100;
+}
 
+h2 {
+  display: block;
+  font-family:var(--font-family);
+  font-size: var(--h2-font-size);
+  color: var(--text-color-light);
+} 
 
+.section__text {
+  font-family:var(--font-family);
+  font-weight:var(--font-regular);
+  margin-top:20px;
+  line-height: 130%;
+  font-size:16px;
+  z-index: 100;
+}
 
+span {
+  font-weight: var(--font-bold)
+}
+
+.about__cristal {
+  display: block;
+  position: absolute;
+  bottom:-40px;
+  right:106px;
+  z-index:100;
+}
+
+.about__reflex {
+  width:1200px;
+  top:120px;
+  position: relative;
+  display: block;
+  z-index:1;
+}
 /*=============== SKILLS ===============*/
 
 
