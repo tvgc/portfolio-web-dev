@@ -11,9 +11,7 @@
   --first-color-alt: #2954A3; /*utilizado no gradiante*/
   --title-color: #FFFFFF;
   --text-color: #FFFFFF;
-  --text-color-light: ;
   --body-color: #0F103F;
-  --container-color: ;
   
 
   /*========== Font and typography ==========*/
@@ -23,10 +21,7 @@
   --h1-font-size: 3.5rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.8rem;
-  --normal-font-size: ;
-  --small-font-size: ;
   --smaller-font-size: 0.95rem;
-  --tiny-font-size: ;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
