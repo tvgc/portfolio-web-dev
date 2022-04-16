@@ -13,7 +13,6 @@
   --text-color: #FFFFFF;
   --body-color: #0F103F;
 
-  
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -22,10 +21,7 @@
   --h1-font-size: 3.5rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.8rem;
-  --normal-font-size: ;
-  --small-font-size: ;
   --smaller-font-size: 0.95rem;
-  --tiny-font-size: ;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -138,7 +134,30 @@ img {
 }
 
 /*=============== HEADER & NAV===============*/
+.header{
+  display: flex;
 
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__menu{
+  
+  background-color: hsla(var(--second-hue),32%,16%,.8);
+  width: 90%;
+  border-radius: 4rem;
+  padding: 1rem 2.2rem;
+  backdrop-filter: blur(10px);
+}
+
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 /*=============== HOME ===============*/
