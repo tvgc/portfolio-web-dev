@@ -71,6 +71,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  font-family: var(--font-family);
 }
 
 h1, h2, h3 {
@@ -153,8 +154,58 @@ img {
 
 
 
-/*=============== WORK ===============*/
+/*=============== WORKS ===============*/
+.works {
+  text-align: center;
+  margin: auto;
+}
 
+.works, .section__title {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.works__project {
+  grid-template-columns: repeat(auto-fit, 380px);
+  justify-content: center
+}
+
+.work__project-container {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.400);
+}
+
+.work__project {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__project--flex {
+  display: flex;
+  justify-content: center;
+}
+
+.work__project-title {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.300);
+  border-radius: 0 0 30px 30px;
+}
+
+.work__img-designs, .work__img-mockups {
+  width: 280px;
+}
+
+.work__img {
+  width: 30%;
+}
 
 /*=============== TESTIMONIAL ===============*/
 
