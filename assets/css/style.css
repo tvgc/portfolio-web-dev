@@ -11,9 +11,7 @@
   --first-color-alt: #2954A3; /*utilizado no gradiante*/
   --title-color: #FFFFFF;
   --text-color: #FFFFFF;
-  --text-color-light: ;
   --body-color: #0F103F;
-  --container-color: ;
   
 
   /*========== Font and typography ==========*/
@@ -23,10 +21,7 @@
   --h1-font-size: 3.5rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.8rem;
-  --normal-font-size: ;
-  --small-font-size: ;
   --smaller-font-size: 0.95rem;
-  --tiny-font-size: ;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -103,6 +98,8 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
+  display:flex;
+  margin:auto;
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -145,12 +142,36 @@ img {
 /*=============== HOME ===============*/
 
 /*=============== BUTTONS ===============*/
-.about__circle {
-  background:linear-gradient(144.11deg, #C961DE 13.74%, #2954A3 90.91%);
-}
 
 /*=============== ABOUT ===============*/
-
+.about {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.about__content{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.about__img-woman {
+  position: absolute;
+  width:630px;
+}
+.about__circle {
+  position: absolute;
+  width:630px;
+  height:630px;
+  border-radius:50%;
+  background:linear-gradient(144.11deg, #C961DE 13.74%, #2954A3 90.91%);
+}
+.about__cristal {
+  position: absolute;
+  bottom:-40px;
+}
 
 /*=============== SKILLS ===============*/
 
