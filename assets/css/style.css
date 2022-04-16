@@ -12,7 +12,7 @@
   --title-color: #FFFFFF;
   --text-color: #FFFFFF;
   --body-color: #0F103F;
-  
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -136,7 +136,30 @@ img {
 }
 
 /*=============== HEADER & NAV===============*/
+.header{
+  display: flex;
 
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__menu{
+  
+  background-color: hsla(var(--second-hue),32%,16%,.8);
+  width: 90%;
+  border-radius: 4rem;
+  padding: 1rem 2.2rem;
+  backdrop-filter: blur(10px);
+}
+
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 /*=============== HOME ===============*/
@@ -178,10 +201,9 @@ img {
 
 
 
-/*=============== WORK ===============*/
 
 
-/*=============== TESTIMONIAL ===============*/
+
 
 
 
