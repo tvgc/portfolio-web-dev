@@ -18,30 +18,33 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 16px;
-  --biggest-font-size: 60px;
-  --h1-font-size: 30px;
-  --h2-font-size: 24px;
-  --h3-font-size: 20px;
+  --body-font: 1rem;
+  --biggest-font-size: 5rem;
+  --h1-font-size: 3.5rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.8rem;
   --normal-font-size: ;
   --small-font-size: ;
-  --smaller-font-size: 15px;
+  --smaller-font-size: 0.95rem;
   --tiny-font-size: ;
 
   /*========== Font weight ==========*/
-  --wight-1: 100;
-  --wight-2: 200;
-  --wight-3: 300;
-  --wight-4: 400;
-  --wight-5: 500;
-  --wight-6: 600;
-  --wight-7: 700;
-  --wight-8: 800;
-  --wight-9: 900;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Margenes ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
 
   /*========== z index ==========*/
-  --z-index-10: 10;
-  --z-index-100: 100;
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 /* Responsive typography */
