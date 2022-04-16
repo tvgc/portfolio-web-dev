@@ -7,32 +7,41 @@
 
 
   /*========== colors ==========*/
-  --first-color: ;
-  --first-color-alt: ; 
-  --title-color:;
-  --text-color: :;
+  --first-color: #C961DE; /*utilizado no gradiante*/
+  --first-color-alt: #2954A3; /*utilizado no gradiante*/
+  --title-color: #FFFFFF;
+  --text-color: #FFFFFF;
   --text-color-light: ;
-  --body-color: ;
+  --body-color: #0F103F;
   --container-color: ;
   
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: ;
-  --biggest-font-size:;
-  --h1-font-size: ;
-  --h2-font-size: ;
-  --h3-font-size: ;
-  --normal-font-size:;
+  --body-font: 16px;
+  --biggest-font-size: 60px;
+  --h1-font-size: 30px;
+  --h2-font-size: 24px;
+  --h3-font-size: 20px;
+  --normal-font-size: ;
   --small-font-size: ;
-  --smaller-font-size:;
-  --tiny-font-size:;
+  --smaller-font-size: 15px;
+  --tiny-font-size: ;
 
   /*========== Font weight ==========*/
-  
+  --wight-1: 100;
+  --wight-2: 200;
+  --wight-3: 300;
+  --wight-4: 400;
+  --wight-5: 500;
+  --wight-6: 600;
+  --wight-7: 700;
+  --wight-8: 800;
+  --wight-9: 900;
 
   /*========== z index ==========*/
-  
+  --z-index-10: 10;
+  --z-index-100: 100;
 }
 
 /* Responsive typography */
