@@ -5,7 +5,6 @@
 :root {
   --header-height: 3.5rem;
 
-
   /*========== colors ==========*/
   --first-color: #C961DE; /*utilizado no gradiante*/
   --first-color-alt: #2954A3; /*utilizado no gradiante*/
@@ -129,37 +128,7 @@ img {
   margin-bottom: 2rem;
 }
 
-.section__subtitle {
-  display: block;
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-}
-
 /*=============== HEADER & NAV===============*/
-.header{
-  display: flex;
-
-}
-
-.nav{
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__menu{
-  
-  background-color: hsla(var(--second-hue),32%,16%,.8);
-  width: 90%;
-  border-radius: 4rem;
-  padding: 1rem 2.2rem;
-  backdrop-filter: blur(10px);
-}
-
-.nav__list{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 
 /*=============== HOME ===============*/
@@ -167,6 +136,7 @@ img {
 /*=============== BUTTONS ===============*/
 
 /*=============== ABOUT ===============*/
+
 .about {
   display: flex;
   justify-content: center;
@@ -174,16 +144,19 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .about__content{
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
 }
+
 .about__img-woman {
   position: absolute;
   width:630px;
 }
+
 .about__circle {
   position: absolute;
   width:630px;
@@ -191,9 +164,37 @@ img {
   border-radius:50%;
   background:linear-gradient(144.11deg, #C961DE 13.74%, #2954A3 90.91%);
 }
+
+.about__area-text {
+  display:block;
+  top:250px;
+  right:10px;
+  padding:10px;
+  width:315px;
+  position: absolute;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+} 
+
+.section__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.0917px;
+  line-height: 130%;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
 .about__cristal {
+  display: block;
   position: absolute;
   bottom:-40px;
+  right:-10px;
 }
 
 /*=============== SKILLS ===============*/
