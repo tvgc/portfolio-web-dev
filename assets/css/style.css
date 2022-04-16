@@ -142,21 +142,26 @@ img {
 .about {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  justify-content: center;
   align-items: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.about__content{
-  display: flex;
+.about__content {
   position: relative;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about__img-woman {
+  display: block;
   position: absolute;
-  width:630px;
+  bottom:204px;
+  left:292px;
+  z-index: 100;
 }
 
 .about__circle {
@@ -165,40 +170,53 @@ img {
   height:630px;
   border-radius:50%;
   background:linear-gradient(144.11deg, #C961DE 13.74%, #2954A3 90.91%);
+  z-index: 100;
 }
 
 .about__area-text {
   display:block;
-  top:250px;
-  right:10px;
-  padding:10px;
-  width:315px;
+  top:210px;
+  right:50px;
+  width:280px;
   position: absolute;
+  z-index: 100;
 }
 
-.section__subtitle {
+h2 {
   display: block;
-  font-size: var(--smaller-font-size);
+  font-family:var(--font-family);
+  font-size: var(--h2-font-size);
   color: var(--text-color-light);
 } 
 
 .section__text {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17.0917px;
+  font-family:var(--font-family);
+  font-weight:var(--font-regular);
+  margin-top:20px;
   line-height: 130%;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size:16px;
+  z-index: 100;
+}
+
+span {
+  font-weight: var(--font-bold)
 }
 
 .about__cristal {
   display: block;
   position: absolute;
   bottom:-40px;
-  right:-10px;
+  right:106px;
+  z-index:100;
 }
 
+.about__reflex {
+  width:1200px;
+  top:120px;
+  position: relative;
+  display: block;
+  z-index:1;
+}
 /*=============== SKILLS ===============*/
 
 
