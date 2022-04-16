@@ -134,29 +134,58 @@ img {
 }
 
 /*=============== HEADER & NAV===============*/
-.header{
-  display: flex;
 
+.header{
+  position: relative;
 }
 
 .nav{
+  width: 90%;
   display: flex;
   justify-content: space-between;
+  margin-left: 50px;
+
 }
 
 .nav__menu{
   
   background-color: hsla(var(--second-hue),32%,16%,.8);
-  width: 90%;
+  width: 100%;
   border-radius: 4rem;
   padding: 1rem 2.2rem;
   backdrop-filter: blur(10px);
 }
 
 .nav__list{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav__link{
+  color: var(--text-color);
+  font-size: 1.25rem;
+  padding: .4rem;
+}
+
+.header__content{
+  position: absolute;
+  top: 250px;
+  right: 400px;
+  width: 700px;
+  font-size: 2rem;
+}
+
+.content__title{
+  font-family: Poppins;
+}
+
+.content_img{
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  right: -400px;
 }
 
 
