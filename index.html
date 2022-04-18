@@ -8,16 +8,16 @@
      <!--=============== REMIXICONS ===============-->
      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <title>Document</title>
+    <title>portifolio</title>
 </head>
-<body>
+<main>
     <!-- ============================ header================================= -->
 
-    <header class="header " id="Header">
+    <header class="header" id="Header">
         <nav class="nav">
-            <a href="" class="nav__logo">
-                <img src="../portifolio/assets/images/Illustration top.png" alt="">
-            </a>
+            <div class="nav__img--top">
+                <img src="./assets/images/Illustration top.png" alt=""> 
+            </div>
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav_item">
@@ -37,7 +37,7 @@
                     </li>
                     
                     <li class="nav_item">
-                        <a href="#services" class="nav__link ">
+                        <a href="#work" class="nav__link ">
                             Work
                         </a>
                     </li>
@@ -49,41 +49,41 @@
                 </ul>
             </div>
         </nav>  
-         <!--=============== NAVBAR ===============-->
-         <nav class="sidi">
-            <ul class="sidi__list">
-                <a href="#home" class="sidi__link active-link">
+         <!--=============== sidebar ===============-->
+         <nav class="side">
+            <ul class="side__list">
+                <a href="#home" class="side__link ">
                     <i class="ri-home-5-line"></i>
-                    <span class="sidi__name">
-                        Home
+                    <span class="side__name">
+                    
                     </span>
                 </a>
 
-                <a href="#profile" class="sidi__link">
+                <a href="#about" class="side__link active-link">
                     <i class="ri-user-line"></i>
-                    <span class="sidi__name">
-                        Profile
+                    <span class="side__name">
+                    
                     </span>
                 </a>
 
-                <a href="#message" class="sidi__link">
-                    <i class="ri-chat-3-line"></i>
-                    <span class="sidi__name">
-                        Message
+                <a href="#work" class="side__link">
+                    <i class="ri-suitcase-line"></i>
+                    <span class="side__name">
+                        
                     </span>
                 </a>
 
-                <a href="#mail" class="sidi__link">
-                    <i class="ri-mail-open-line"></i>
-                    <span class="sidi__name">
-                        Mail
+                <a href="#mail" class="side__link">
+                    <i class="ri-phone-fill"></i>
+                    <span class="side__name">
+                    
                     </span>
                 </a>
 
-                <a href="#settings" class="sidi__link">
-                    <i class="ri-settings-line"></i>
+                <a href="#settings" class="side__link">
+                    <i class="ri-search-line"></i>
                     <span class="sidi__name">
-                        Settings
+                        
                     </span>
                 </a>
 
@@ -99,7 +99,7 @@
     <!-- ============================ main ================================= -->
     <main class="main">
         <!-- =========================== home =========================== -->
-        <section class="home" id="home">
+        <section class="home container section" id="home">
             <h1 class="content__title">Creative UI Designer
                 Sourasith Phomhome
                 Based in Montreal
@@ -107,7 +107,7 @@
             <img src="./assets/images/Ilustration bottom.png" alt="" class="content_img">
         </section> 
         <!-- =========================== about =========================== -->
-        <section class="about section" >
+        <section class="about section" id="about" >
             <div class="about__content">
                 <div class="about__circle">
                     <div class="about__area-text">
@@ -122,8 +122,35 @@
                 <img class="about__reflex" src="./assets/images/Background.png" alt="">
             </div>
         </section>
-    </main>
+        <!--===== WORKS =====-->
+        <section class="works grid section" id="work">
+            <h1 class="section__title">My recent work</h1>
+            <div class="works__project grid">
+                <div class="work__project-container">
+                    <div class="work__project">
+                        <img class="work__img-designs" src="assets/images/3d 2.png" alt="">
+                    </div>
+                    <h2 class="work__project-title">Designs</h2>
+                </div>                
+                <div class="work__project-container">
+                    <div class="work__project work__project--flex">
+                        <img class="work__img" src="assets/images/1.png" alt="">
+                        <img class="work__img" src="assets/images/2.png" alt="">
+                        <img class="work__img" src="assets/images/3.png" alt="">
+                    </div>
+                    <h2 class="work__project-title">UI Designs</h2>
+                </div>
+                <div class="work__project-container">
+                    <div class="work__project">
+                        <img class="work__img-mockups" src="assets/images/Comp 38 2.png" alt="">
+                    </div>
+                    <h2 class="work__project-title">Mockups</h2>
+                </div>
+            </div>
+        </section>
+        <script src="./assets/js/main.js"></script>
         <!-- ============================ footer================================= -->
         <script src="/portifolio/assets/js/main.js"></script>
-    </body>
-    </html>
+    </main>
+</body>
+</html>

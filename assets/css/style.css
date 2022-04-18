@@ -70,6 +70,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  font-family: var(--font-family);
 }
 
 h1, h2, h3 {
@@ -99,8 +100,6 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  display:flex;
-  margin:auto;
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -118,6 +117,7 @@ img {
 
 .section {
   padding: 4.5rem 0 1rem;
+  
 }
 
 .section__title, 
@@ -163,41 +163,43 @@ img {
 }
 
 /*=============== sidbar ===============*/
-.sidi {
+.side {
   position: fixed;
   top: 10rem;
   left: 0;
   width: 72px;
   height: 328px;
-  background-color: var(--container-color);
-  box-shadow: 0 8px 32px hsla(231, 44%, 45%, .2);
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 39.8736px 39.8736px rgba(69, 42, 124, 0.15);
   margin: 0 auto;
+  backdrop-filter: blur(20.1079px);
   padding: 1.5rem .5rem;
   border-radius: .65rem;
   overflow: hidden;
 }
 
-.sidi__list {
+.side__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
 }
 
-.sidi__link {
+.side__link {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sidi__link i {
+.side__link i {
+  margin-top:8px;
   font-size: 1.5rem;
   color: var(--title-color);
   z-index: 20;
   transition: .3s;
 }
 
-.sidi__name {
+.side__name {
   font-size: var(--tiny-font-size);
   position: absolute;
   font-weight: 500;
@@ -212,40 +214,40 @@ img {
 .indicator {
   position: absolute;
   right: -20px;
-  bottom: 40px;
-  fill: var(--first-color);
+  top: 20px;
+  fill: rgb(41, 40, 40);
   transition: .3s;
   transform: rotate(-90deg);
 }
 
 /* Active link */
-.active-sidi i {
+.active-side  i{
   color: var(--body-color);
 }
 
-.active-sidi .nav__name {
+.active-side .nav__name {
   opacity: 1;
   transform: translateY(28px);
 }
 
 /* Move indicator */
-.nav__link:nth-child(1).active-link ~ .indicator {
-  transform: translateX(calc(56px * 0));
+.side__link:nth-child(1).active-link ~ .indicator {
+  transform: rotate(-90deg) translateY(calc(56px * 0));
 }
 
-.nav__link:nth-child(2).active-link ~ .indicator {
-  transform: translateX(calc(56px * 1));
+.side__link:nth-child(2).active-link ~ .indicator {
+  transform: translateY(calc(56px * 1.1)) rotate(-90deg);
 }
 
-.nav__link:nth-child(3).active-link ~ .indicator {
-  transform: translateX(calc(56px * 2));
+.side__link:nth-child(3).active-link ~ .indicator {
+  transform: translateY(calc(56px * 2.3)) rotate(-90deg);
 }
 
-.nav__link:nth-child(4).active-link ~ .indicator {
+.side__link:nth-child(4).active-link ~ .indicator {
   transform: translateX(calc(56px * 3));
 }
 
-.nav__link:nth-child(5).active-link ~ .indicator {
+.side__link:nth-child(5).active-link ~ .indicator {
   transform: translateX(calc(56px * 4));
 }
 
@@ -261,6 +263,8 @@ img {
   align-items: center;
   align-items: center;
   margin: 0 auto;
+  height: 100vh;
+  margin-top: 200px;
 }
 
 .about__content {
@@ -366,7 +370,59 @@ span {
 
 
 
+/*=============== WORKS ===============*/
+.works {
+  text-align: center;
+  margin: auto;
+  height: 100vh;
+}
 
+.works, .section__title {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.works__project {
+  grid-template-columns: repeat(auto-fit, 380px);
+  justify-content: center
+}
+
+.work__project-container {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.400);
+}
+
+.work__project {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__project--flex {
+  display: flex;
+  justify-content: center;
+}
+
+.work__project-title {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.300);
+  border-radius: 0 0 30px 30px;
+}
+
+.work__img-designs, .work__img-mockups {
+  width: 280px;
+}
+
+.work__img {
+  width: 30%;
+}
 
 
 
