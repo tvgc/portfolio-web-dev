@@ -1,15 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <!-- ============================ header================================= -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>portifolio</title>
+  </head>
+  <body>
+    <header class="header" id="Header">
+      <nav class="nav">
+        <div class="nav__img--top">
+          <img src="./assets/images/Illustration top.png" alt="" />
+        </div>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav_item">
+              <a href="#home" class="nav__link active-link"> Home </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav__link"> About me </a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav__link">
+                <img src="./assets/images/Logo name.png" alt="" />
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#work" class="nav__link"> Work </a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav__link"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--=============== sidebar ===============-->
+      <nav class="side">
+        <ul class="side__list">
+          <a href="#home" class="side__link">
+            <i class="ri-home-5-line"></i>
+            <span class="side__name"> </span>
+          </a>
+
+          <a href="#about" class="side__link active-link">
+            <i class="ri-user-line"></i>
+            <span class="side__name"> </span>
+          </a>
+
+          <a href="#work" class="side__link">
+            <i class="ri-suitcase-line"></i>
+            <span class="side__name"> </span>
+          </a>
+
+          <a href="#mail" class="side__link">
+            <i class="ri-phone-fill"></i>
+            <span class="side__name"> </span>
+          </a>
+
+          <a href="#settings" class="side__link">
+            <i class="ri-search-line"></i>
+            <span class="sidi__name"> </span>
+          </a>
+
+          <svg
+            class="indicator"
+            width="94"
+            height="56"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse cx="47" cy="28" rx="24" ry="28" />
+            <path
+              d="M24 20C24 20 28 55.9999 48 56L0 55.9997C18 55.9998 24 20 24 20Z"
+            />
+            <path
+              d="M70 20C70 20 66 55.9999 46 56L94 55.9997C76 55.9998 70 20 70 20Z"
+            />
+          </svg>
+        </ul>
+      </nav>
+    </header>
+
     <!-- ============================ main ================================= -->
-    <!-- ============================ footer================================= -->
-</body>
+    <main class="main">
+      <!-- =========================== home =========================== -->
+      <section class="home container section" id="home">
+        <h1 class="content__title">
+          Creative UI Designer Sourasith Phomhome Based in Montreal
+        </h1>
+        <img
+          src="./assets/images/Ilustration bottom.png"
+          alt=""
+          class="content_img"
+        />
+      </section>
+      <!-- =========================== about =========================== -->
+      <section class="about section" id="about">
+        <div class="about__content">
+          <div class="about__circle">
+            <div class="about__area-text">
+              <h2>About</h2>
+              <p class="section__text">
+                My name is Sourasith Phomhome. I’m a UI Designer and a instrutor
+                based in Montreal. I’m curently working with Design+Code. I’m
+                passionate about creating digital experiences and teaching
+                design. My goal is to help beginners to grow their
+                skills...<span>read more</span>
+              </p>
+            </div>
+          </div>
+          <img
+            class="about__img-woman"
+            src="./assets/images/menina.png"
+            alt="mulher com inspriradora"
+          />
+          <img
+            class="about__cristal"
+            src="./assets/images/Illustration.png"
+            alt="cristal brilhante"
+          />
+          <img
+            class="about__reflex"
+            src="./assets/images/Background.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!--===== WORKS =====-->
+      <section class="works grid section" id="work">
+        <h1 class="section__title">My recent work</h1>
+        <div class="works__project grid">
+          <div class="work__project-container">
+            <div class="work__project">
+              <img
+                class="work__img-designs"
+                src="assets/images/3d 2.png"
+                alt=""
+              />
+            </div>
+            <h2 class="work__project-title">Designs</h2>
+          </div>
+          <div class="work__project-container">
+            <div class="work__project work__project--flex">
+              <img class="work__img" src="assets/images/1.png" alt="" />
+              <img class="work__img" src="assets/images/2.png" alt="" />
+              <img class="work__img" src="assets/images/3.png" alt="" />
+            </div>
+            <h2 class="work__project-title">UI Designs</h2>
+          </div>
+          <div class="work__project-container">
+            <div class="work__project">
+              <img
+                class="work__img-mockups"
+                src="assets/images/Comp 38 2.png"
+                alt=""
+              />
+            </div>
+            <h2 class="work__project-title">Mockups</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+          <div class="card">
+              <div class="container__contact">
+                  <div class="text">
+                      <h2>Get in touch</h2>
+                      <p>I’m very approachable and would love to speak to you. Feel free to call, send me an email . Follow me in social media or simply complete the enquiry form.</p>
+                  </div>
+                  <div class="contact">
+                      <div class="tell">
+                          <div class="cicle"><img src="" alt="">1-514-456-2753</div>
+                      </div>
+                      <div class="mail">
+                          <div class="cicle"><img src="" alt="">Sou12@gmail.com</div>
+                      </div>
+                  </div>
+              </div>
+
+              <form id="form" action="">
+                  <fieldset>
+                      <legend>Send me a message</legend>
+
+                      <input type="text">
+                      <input type="email">
+                      <input type="text">
+
+                      <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                      <button>Send message</button>
+                  </fieldset>
+              </form>
+          </div>
+          <figure class="figure">
+              <img class="planet" src="./assets/images/6.png" alt="">
+              <img class="planet__space" src="./assets/images/Group 1199.png" alt="">
+          </figure>
+      </section>
+    </main>
+  </body>
 </html>
