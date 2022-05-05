@@ -1,18 +1,16 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-
   /*========== colors ==========*/
-  --first-color: #C961DE; /*utilizado no gradiante*/
-  --first-color-alt: #2954A3; /*utilizado no gradiante*/
-  --title-color: #FFFFFF;
-  --text-color: #FFFFFF;
-  --body-color: #0F103F;
-  
+  --first-color: #c961de; /*utilizado no gradiante*/
+  --first-color-alt: #2954a3; /*utilizado no gradiante*/
+  --title-color: #ffffff;
+  --text-color: #ffffff;
+  --body-color: #0f103f;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -46,7 +44,6 @@
 
 /* Responsive typography */
 @media screen and (min-width: 968px) {
-  
 }
 
 /*=============== BASE ===============*/
@@ -71,9 +68,12 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  font-family: var(--font-family);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
 }
@@ -97,7 +97,6 @@ img {
   height: auto;
 }
 
-
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
@@ -118,7 +117,7 @@ img {
   padding: 4.5rem 0 1rem;
 }
 
-.section__title, 
+.section__title,
 .section__subtitle {
   text-align: center;
 }
@@ -137,30 +136,158 @@ img {
 
 /*=============== HEADER & NAV===============*/
 
-
-
 /*=============== HOME ===============*/
 
 /*=============== BUTTONS ===============*/
 
-
 /*=============== ABOUT ===============*/
-
-
 
 /*=============== SKILLS ===============*/
 
+/*=============== WORKS ===============*/
 
+/*=============== CONTACT ===============*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 300px;
+}
 
+.figure {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+}
 
-/*=============== WORK ===============*/
+.planet {
+  width: 400px;
+  height: auto;
+  margin-bottom: 200px;
+}
 
+.planet__space {
+  width: 1300px;
+  height: auto;
+  margin-top: 500px;
+}
 
-/*=============== TESTIMONIAL ===============*/
+.working {
+  position: absolute;
+  z-index: 1;
+  margin-top: -655px;
+  margin-left: -210px;
+}
 
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 900px;
+  height: 600px;
+  background: rgba(47, 47, 138, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
 
+.container__contact {
+  margin-top: 53px;
+  margin-left: 97px;
+}
 
+.text h2 {
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  margin-bottom: 19px;
+}
 
+.text p {
+  width: 252px;
+  height: 144px;
+  margin-bottom: 68px;
+  font-size: 17px;
+  font-weight: var(--font-regular);
+}
 
+.circle {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  justify-content: center;
+  font-size: 15px;
+  font-weight: var(--font-regular);
+}
 
-/*=============== FOOTER ===============*/
+.circle img {
+  width: 20px;
+  height: auto;
+}
+
+.container__contac {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+#form {
+  margin-top: 53px;
+  margin-right: 90px;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  margin-bottom: 20px;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+}
+
+input {
+  width: 340px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-color);
+  padding: 20px;
+  font-size: 15px;
+  font-weight: var(--font-regular);
+}
+
+textarea {
+  width: 340px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 160px;
+  height: 40px;
+  background: linear-gradient(105.95deg, #c961de 24.79%, #2954a3 71.87%);
+  box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+button:hover {
+  background: linear-gradient(-105.95deg, #c961de 24.79%, #2954a3 71.87%);
+}
